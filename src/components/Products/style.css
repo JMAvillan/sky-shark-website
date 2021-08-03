@@ -1,0 +1,16 @@
+#displayOfProducts{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+max-width: 100%;
+/* background-color: #adb5bd; */
+border:1px solid black;
+box-shadow: 2.5px 5px 5px grey;
+border-radius: 5px;
+}
+@media  only screen and (max-width: 600px) {
+    #displayOfProducts{
+    flex-direction: column;
+
+}
+}
