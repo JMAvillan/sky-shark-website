@@ -38,7 +38,7 @@ const Navbar = () => {
 
         window.addEventListener('resize', (event) => {
             if (event?.path)
-                if (event.path[0].innerWidth > 600)
+                if (event.path[0].innerWidth > 670)
                     openBurger({ listDisplayType: "flex" });
                 else
                     closeBurger();
