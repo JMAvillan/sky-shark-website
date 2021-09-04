@@ -1,0 +1,8 @@
+/* The instagram feed format was made by inspecting the elements of this page:
+https://mohammedraji.github.io/react-ig-feed/ */
+#feed{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+}

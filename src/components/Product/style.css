@@ -1,3 +1,7 @@
+#hidden{
+    visibility: hidden;
+}
+
 .completeProductContainer{
     display: block;
     /* flex-direction: column;    */
@@ -5,7 +9,12 @@
     max-width: 23%;
     min-width: 23%;
     height:auto;
+    transition: transform .2s; /* Animation */
+}
 
+.completeProductContainer:hover {
+    cursor: pointer;
+    transform: scale(1.01); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 .productContainer{
     display: flex;
@@ -15,6 +24,7 @@
     box-shadow: 2.5px 5px 5px grey;
     background-color: white;
     border-radius: 5px;
+    border-top-left-radius: 0px;
 }
 
 img{
@@ -31,7 +41,16 @@ img{
     
 }
 .productTitle{
+    background-color: white;
+    width: fit-content;
+    max-width: 90%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
     margin:0;
+    padding-inline:10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     /* border: 1px solid black; */
 }
 div span{
@@ -60,12 +79,14 @@ div span:last-of-type{
 @media  only screen and (max-width: 1260px) {
     .completeProductContainer{
         max-width: 30%;
+        min-width: 30%;
     }
     
 }
 @media  only screen and (max-width: 960px) {
     .completeProductContainer{
         max-width: 45%;
+        min-width: 45%;
     }
     
 }

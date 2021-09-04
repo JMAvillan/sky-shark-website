@@ -1,4 +1,6 @@
 import React, { useEffect } from 'react'
+import { Link } from 'react-router-dom'
+
 import './style.css'
 
 const Navbar = () => {
@@ -53,8 +55,8 @@ const Navbar = () => {
                 </div>
                 <div id="navContainer">
                     <ul id="navUL">
-                        <li className="navLI">Menu Principal</li>
-                        <li className="navLI">Comprar</li>
+                        <li className="navLI"><Link to='/'>Menu Principal</Link></li>
+                        <li className="navLI"><Link to='/productos'>Comprar</Link></li>
                         <li className="navLI">Sobre Nosotros</li>
                         <li className="navLI">Contactenos</li>
                         <li className="navLI">Carrito</li>
