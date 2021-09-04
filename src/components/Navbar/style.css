@@ -16,8 +16,6 @@
     padding-left: 25px;
     padding-right: 25px;
     margin-bottom: 0px; 
-
-
 }#navButton{
     display: none;
 }
@@ -44,6 +42,9 @@
     cursor: pointer;
     color:blue;
 }
+#logoText{
+    display: block;
+}
 
 @media  only screen and (max-width: 670px) {
     #stickyContainer{
@@ -54,7 +55,7 @@
     #header{
         display: flex;
         justify-content: space-between;
-        align-items: baseline;
+        align-items: center;
         /* border:1px solid black; */
         padding-bottom: 0px;
     }
@@ -99,5 +100,7 @@
         /* display: flex;
         justify-content: flex-end; */
     }
-        
+    #logoText{
+        display: none;
+    }
 }

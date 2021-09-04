@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import Logo from '../Logo'
 
 import './style.css'
 
@@ -50,7 +51,8 @@ const Navbar = () => {
         <div id="stickyContainer">
             <div id="navBarMainContainer">
                 <div id="header">
-                    <h3 id="logo">Sky Shark</h3>
+                    <h3 id="logoText">Sky Shark</h3>
+                    <Logo />
                     <p id="navButton">burger icon</p>
                 </div>
                 <div id="navContainer">

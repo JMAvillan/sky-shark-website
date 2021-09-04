@@ -1,0 +1,5 @@
+const COLOR = {
+    BLACK: '#201E1E',
+    DIRT_ORANGE_LIGHT: '#DDB772',
+    DIRT_ORANGE_DARK: '#D1AD6C',
+}

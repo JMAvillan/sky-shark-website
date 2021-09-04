@@ -81,7 +81,7 @@ const Instagram = () => {
     }, [])
     return (
         <div className="itemContainer">
-            <h4>skysharkgroup</h4>
+            <h4><span>logo circular</span>skysharkgroup <span>Boton Siguenos en Instagram</span></h4>
             <div id='feed'>
                 {recentPosts && displayRecentImages()}
             </div>
