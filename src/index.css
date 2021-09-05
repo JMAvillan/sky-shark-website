@@ -9,3 +9,18 @@
     /* background-color:#212529; */
     margin:15px;
 }
+
+@font-face {
+  font-family: 'Asap';
+  src: local('Asap'), url(./assets/fonts/Asap/static/Asap-Regular.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: 'Kanit';
+  src: local('Kanit'), url(./assets/fonts/Kanit/Kanit-Regular.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: 'Droid-Sans';
+  src: local('Droid-Sans'), url(./assets/fonts/droid-sans/DroidSans.ttf) format('ttf');
+}
