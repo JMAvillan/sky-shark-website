@@ -1,0 +1,8 @@
+.productFooter span{
+    padding-inline: 25px;
+}
+
+.productFooter span:last-of-type{
+    margin-right: 25px;
+   /* border-right: 1px solid black; */
+}

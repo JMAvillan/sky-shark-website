@@ -21,10 +21,11 @@
     position: relative;
     max-height:350px;
     flex: 1;
-    box-shadow: 2.5px 5px 5px grey;
+    /* box-shadow: 2.5px 5px 5px grey; */
     background-color: white;
-    border-radius: 5px;
+    border-radius: 15px;
     border-top-left-radius: 0px;
+    padding-top: 5px;
 }
 
 img{
@@ -41,6 +42,8 @@ img{
     
 }
 .productTitle{
+    font-family: 'Primary';
+    font-size: large;
     background-color: white;
     width: fit-content;
     max-width: 90%;
@@ -53,14 +56,7 @@ img{
     border-top-right-radius: 5px;
     /* border: 1px solid black; */
 }
-div span{
-    padding-inline: 25px;
-}
 
-div span:last-of-type{
-    margin-right: 25px;
-   border-right: 1px solid black;
-}
 .additionalInfoContainer{
     flex:1;
     /* position: absolute;
@@ -92,7 +88,7 @@ div span:last-of-type{
 }
 @media  only screen and (max-width: 670px) {
     .completeProductContainer{
-        max-width: 100%;
+        max-width: 80%;
     }
 
 }

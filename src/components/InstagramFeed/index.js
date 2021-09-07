@@ -2,6 +2,7 @@ import axios from 'axios'
 import React, { useEffect, useState } from 'react';
 import FbImageLibrary from 'react-fb-image-grid'
 import { getInstagramPostsUrls, saveInstagramPostsUrls } from '../../actions/LocalStorage/handleLocalStorage';
+import { COLORS } from '../Constants/constants';
 import InstagramPost from './InstagramPost';
 import './style.css'
 
@@ -68,7 +69,7 @@ const Instagram = () => {
     }
 
     const displayRecentImages = () => {
-        return recentPosts.slice(0).map((post) => {
+        return recentPosts.slice(0, 3).map((post) => {
             return <InstagramPost post={post} />
             // if (post.media_url === "CAROUSEL_ALBUM")
             //     return <FbImageLibrary images={post.media_url} key={post.id} />
@@ -80,9 +81,9 @@ const Instagram = () => {
         handlePostsDisplay();
     }, [])
     return (
-        <div className="itemContainer">
+        <div style={{ backgroundColor: COLORS.BLACK }} className="itemContainer">
             <h4><span>logo circular</span>skysharkgroup <span>Boton Siguenos en Instagram</span></h4>
-            <div id='feed'>
+            <div id='feed' className='content'>
                 {recentPosts && displayRecentImages()}
             </div>
         </div>

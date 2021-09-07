@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react'
+import { COLORS } from '../Constants/constants';
 import Product from '../Product'
 import './style.css'
 function Products({ products }) {
@@ -65,7 +66,7 @@ function Products({ products }) {
     }, []);
 
     return (
-        <div id={'displayOfProducts'} className='itemContainer'>
+        <div id={'displayOfProducts'} className='content'>
             {displayItems}
         </div>
     )

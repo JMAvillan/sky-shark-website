@@ -1,10 +1,14 @@
 #stickyContainer{
-    position: sticky; /*Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    background-color: white;
-    /* border:1px solid black; */
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 1px;
+    /* background-color: white; */
+    /* border-bottom:1px solid red; */
     /* box-shadow: 2.5px 5px 5px grey; */
     z-index: 5;
+    background-color:var(--bg-primary); ;
 }
 
 #header{
@@ -18,6 +22,10 @@
     margin-bottom: 0px; 
 }#navButton{
     display: none;
+    width: auto;
+    height: 25px;
+    margin: 0px;
+    padding: 0px;
 }
 
 #navUL {
@@ -25,7 +33,7 @@
     display: flex;
     justify-content: space-evenly;
     height: 40px;
-    margin-top: 0px; 
+    margin-block: 0px;
     padding-left: 0px; 
     /* padding-bottom: 0px;  */
     border:0px solid black;
@@ -41,7 +49,10 @@
 }
 .navLI{
     cursor: pointer;
-    color:blue;
+    font-family: 'Primary';
+    font-size: larger;
+}
+.navLI:hover{
 }
 #logoText{
     display: block;
@@ -49,9 +60,7 @@
 
 @media  only screen and (max-width: 670px) {
     #stickyContainer{
-        margin-bottom: 2.5px;
-        /* border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px; */
+        /* margin-bottom: 2.5px; */
     }
     #header{
         display: flex;
@@ -65,17 +74,18 @@
 
     }
     #navContainer{
-        /* margin-inline: 5px; */
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
     }
     #navUL {
         display: none;
         margin-bottom: 0px;
         margin-top: 0px;
         height: auto;
-        background-color: white;
-        box-shadow: 2.5px 5px 5px grey;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
+        /* background-color: white;
+        box-shadow: 2.5px 5px 5px grey; */
         /* border:0px solid black; */
         /* background-color: aqua; */
 
@@ -83,9 +93,7 @@
     #navContainer li{
         text-align: center;
         padding:10px;
-    }
-    #navContainer li{
-        border-bottom:1px solid black;
+        border-bottom:1px solid var(--bg-secondary);
     }
     
     #navContainer li:last-child{
@@ -97,9 +105,8 @@
     .navLI{
         display: none;
     }
-    #navButton{
-        /* display: flex;
-        justify-content: flex-end; */
+    #navButton:hover{
+        /* color: red; */
     }
     #logoText{
         display: none;

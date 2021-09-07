@@ -1,26 +1,41 @@
-.itemContainer{
-    background-color: #adb5bd;
-    border:1px solid black;
-    box-shadow: 2.5px 5px 5px grey;
-    border-radius: 5px;
-    padding-block: 10px;
+.bodyContainer{
+    background-color:var(--bg-primary);
+    padding:15px;
+  }
+  .content{
+    background-color:var(--bg-secondary);
+    border-radius: 15px;
 }
-#content{
-    /* background-color:#212529; */
-    margin:15px;
+
+:root{
+  --bg-primary:#000000;
+  --bg-secondary:#201E1E;
+  --bg-secondary-light:#3D4849;
+  --color-primary:#D1AD6C;
+  --color-secondary:#DDB772;
+}
+
+body::-webkit-scrollbar{
+  width:5px;
+}
+body::-webkit-scrollbar-track{
+  background:var(--bg-secondary-light);
+}
+body::-webkit-scrollbar-thumb{
+  background:var(--color-primary);
 }
 
 @font-face {
-  font-family: 'Asap';
-  src: local('Asap'), url(./assets/fonts/Asap/static/Asap-Regular.ttf) format('ttf');
+  font-family: 'ArticleTitle';
+  src: local('Asap'), url(./assets/fonts/Asap/static/Asap-Regular.ttf) format('truetype');
 }
 
 @font-face {
-  font-family: 'Kanit';
-  src: local('Kanit'), url(./assets/fonts/Kanit/Kanit-Regular.ttf) format('ttf');
+  font-family: 'Primary';
+  src: local('Kanit'), url(./assets/fonts/Kanit/Kanit-Regular.ttf) format('truetype');
 }
 
 @font-face {
-  font-family: 'Droid-Sans';
-  src: local('Droid-Sans'), url(./assets/fonts/droid-sans/DroidSans.ttf) format('ttf');
+  font-family: 'Secondary';
+  src: local('Droid-Sans'), url(./assets/fonts/droid-sans/DroidSans.ttf) format('truetype');
 }

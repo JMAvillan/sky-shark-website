@@ -3,6 +3,7 @@ https://mohammedraji.github.io/react-ig-feed/ */
 #feed{
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
-    /* align-items: center; */
+    
+    justify-content: space-evenly;
+    align-items: center;
 }

@@ -3,7 +3,7 @@ import './style.css';
 
 const ProductFooter = () => {
     return (
-        <div>
+        <div className='productFooter'>
             <p><span>-</span> 2 <span>+</span>Agregar a Carrito</p>
         </div>
     );

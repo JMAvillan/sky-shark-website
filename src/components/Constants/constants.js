@@ -1,5 +1,7 @@
-const COLOR = {
-    BLACK: '#201E1E',
+exports.COLORS = {
+    BLACK: '#000000',
+    GRAY: '#201E1E',
+    LIGHT_GRAY: '#3D4849',
     DIRT_ORANGE_LIGHT: '#DDB772',
     DIRT_ORANGE_DARK: '#D1AD6C',
 }

@@ -5,15 +5,16 @@ import Navbar from '../../Navbar'
 import Products from '../../Products'
 import Feed from '../../InstagramFeed'
 import './style.css'
+import { COLORS } from '../../Constants/constants'
 
 function Home() {
     // fetchInstagramPosts()
     // getRecentPosts();
     return (
-        <div id="mainContainer">
+        <div className="bodyContainer">
             {/* <Navbar /> */}
             <Banner />
-            <div id="content">
+            <div className="bodyContainer">
                 <div id="promotion">
                 </div>
                 <div id="promotion">
