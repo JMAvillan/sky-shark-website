@@ -71,7 +71,7 @@ const Navbar = () => {
         });
     }, [])
     return (
-        <div style={{ backgroundColor: COLORS.BLACK, borderBottom: '1px solid' + COLORS.LIGHT_GRAY }} id="stickyContainer">
+        <div id="stickyContainer">
             <div id="navBarMainContainer">
                 <div id="header">
                     <h3 id="logoText">Sky Shark</h3>

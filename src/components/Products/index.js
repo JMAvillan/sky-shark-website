@@ -2,7 +2,8 @@ import React, { useState, useEffect, useRef } from 'react'
 import { COLORS } from '../Constants/constants';
 import Product from '../Product'
 import './style.css'
-function Products({ products }) {
+function Products(props) {
+    let { products } = props;
 
     //Reason we add fake items:
     //https://stackoverflow.com/questions/32802202/how-to-center-a-flex-container-but-left-align-flex-items
@@ -44,7 +45,7 @@ function Products({ products }) {
     useEffect(() => {
         const unsubscribe = window.addEventListener('resize', (evt) => {
             const currentSize = window.innerWidth;
-            if (previousWindowSize.current >= 1260 && currentSize < 1260) {
+            if (previousWindowSize.current >= 1400 && currentSize < 1400) {
                 resetDummyProducts(4);
             }
             else if ((previousWindowSize.current >= 960 && previousWindowSize.current < 1260) && (currentSize >= 1260 || currentSize < 960)) {
@@ -66,7 +67,7 @@ function Products({ products }) {
     }, []);
 
     return (
-        <div id={'displayOfProducts'} className='content'>
+        <div id={'displayOfProducts'} className='content' >
             {displayItems}
         </div>
     )

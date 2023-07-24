@@ -1,10 +1,15 @@
-.bodyContainer{
+body{
+    background-color:var(--bg-primary);
+    /* padding:15px; */
+  }
+  .bodyContainer{
     background-color:var(--bg-primary);
     padding:15px;
-  }
-  .content{
+  
+}
+.content{
     background-color:var(--bg-secondary);
-    border-radius: 15px;
+    border-radius: 5px;
 }
 
 :root{
@@ -13,6 +18,8 @@
   --bg-secondary-light:#3D4849;
   --color-primary:#D1AD6C;
   --color-secondary:#DDB772;
+  --color-secondary-dark:#C59130;
+
 }
 
 body::-webkit-scrollbar{
@@ -22,7 +29,7 @@ body::-webkit-scrollbar-track{
   background:var(--bg-secondary-light);
 }
 body::-webkit-scrollbar-thumb{
-  background:var(--color-primary);
+  background:var(--color-secondary-dark);
 }
 
 @font-face {

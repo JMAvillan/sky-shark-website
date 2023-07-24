@@ -3,19 +3,19 @@ import Home from './components/screens/Home';
 import Shopping from './components/screens/Shopping';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { useMemo, useState } from 'react';
-import { UserContext, SelectedCategories, Cart } from './useContext'
+import { UserContext, Categories, Cart } from './useContext'
 
 
 function App() {
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState({});
   const userProvider = useMemo(() => ({ user, setUser }), [user, setUser]);
-  const [selectedCategories, setSelectedCategories] = useState(null);
-  const selectedCategoriesProvider = useMemo(() => ({ selectedCategories, setSelectedCategories }), [selectedCategories, setSelectedCategories]);
-  const [cart, setCart] = useState(null);
+  const [categories, setCategories] = useState({});
+  const categoriesProvider = useMemo(() => ({ categories, setCategories }), [categories, setCategories]);
+  const [cart, setCart] = useState({});
   const cartProvider = useMemo(() => ({ cart, setCart }), [cart, setCart]);
   return (
     <UserContext.Provider value={userProvider}>
-      <SelectedCategories.Provider value={selectedCategoriesProvider}>
+      <Categories.Provider value={categoriesProvider}>
         <Cart.Provider value={cartProvider}>
           <Router>
             <Navbar />
@@ -31,7 +31,7 @@ function App() {
             </div>
           </Router>
         </Cart.Provider>
-      </SelectedCategories.Provider>
+      </Categories.Provider>
     </UserContext.Provider>
 
   );

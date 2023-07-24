@@ -1,6 +1,6 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react';
-import FbImageLibrary from 'react-fb-image-grid'
+// import FbImageLibrary from 'react-fb-image-grid'
 import { getInstagramPostsUrls, saveInstagramPostsUrls } from '../../actions/LocalStorage/handleLocalStorage';
 import { COLORS } from '../Constants/constants';
 import InstagramPost from './InstagramPost';
@@ -27,8 +27,8 @@ const skySharkInstagramInfo = {
 }
 const listOfFields = ['id', 'media_type', 'media_url', 'timestamp', 'caption', 'permalink', 'thumbnail_url', 'username']
 const urlForPosts = `https://graph.instagram.com/${skySharkInstagramInfo.user_id}/media?fields=${listOfFields}&access_token=${skySharkInstagramInfo.access_token}`
-const urlForPostData = `https://graph.instagram.com/media-id?fields=id,media_type,media_url,username,timestamp&access_token=${skySharkInstagramInfo.access_token}`
-const urlForPostChildren = `https://graph.instagram.com/album-id/children?fields=${listOfFields.slice(0, 3)}&access_token=${skySharkInstagramInfo.access_token}`
+// const urlForPostData = `https://graph.instagram.com/media-id?fields=id,media_type,media_url,username,timestamp&access_token=${skySharkInstagramInfo.access_token}`
+// const urlForPostChildren = `https://graph.instagram.com/album-id/children?fields=${listOfFields.slice(0, 3)}&access_token=${skySharkInstagramInfo.access_token}`
 const getRecentPosts = async () => {
     try {
         const response = await axios.get(urlForPosts)
